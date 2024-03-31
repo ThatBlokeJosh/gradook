@@ -123,7 +123,7 @@
 </div>
 
 {#if open}
-  <div class="fixed right-[1vw] top-[7vh] z-[50] overflow-scroll grid shadow-xl rounded-lg text-center p-[15px] text-lg font-bold w-[20vw] h-[20vh] bg-black border-[1px] border-zinc-900 duration-500 text-white"
+  <div class="fixed right-[1vw] top-[7vh] z-[50] overflow-scroll border-zinc-700 grid shadow-xl rounded-lg text-center p-[15px] text-lg font-bold w-[20vw] h-[20vh] bg-black border-[1px]  duration-500 text-white"
    in:scale={{duration: 200}} 
    out:scale={{duration: 200}} 
   >
@@ -150,7 +150,7 @@
       </div>
       <div class="grid grid-cols-5 gap-[15px]">
       {#each Get(category) as book}
-        <div class="grid drop-shadow-xl bg-black hover:bg-zinc-950 hover:shadow-[0_0px_20px_0px_rgba(255,255,255,0.2)] duration-500 border-[1px] border-zinc-900 px-[10px] py-[5px] items-center overflow-scroll rounded-lg w-[19vw] h-[12vh] gap-[5px]">
+        <div class="grid drop-shadow-xl bg-black hover:bg-zinc-950 hover:shadow-[0_0px_20px_0px_rgba(255,255,255,0.2)] duration-500 border-[1px] border-zinc-700 px-[10px] py-[5px] items-center overflow-scroll rounded-lg w-[19vw] h-[12vh] gap-[5px]">
           <p><span class="font-bold">{book.title}</span> - <span class="italic">{book.author}</span>
           <span class="text-center text-lg my-auto flex justify-between">
             <div class="flex gap-[5px]">
