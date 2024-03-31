@@ -1,15 +1,4 @@
-enum Genre {
-    Epic,
-    Lyric,
-    Drama
-}
-
-type Book = {
-    title: string,
-    author: string,
-    century: string,
-    genre: Genre
-}
+import { Genre, type Book } from '../utils/types'
 
 let key = "selected"
 
